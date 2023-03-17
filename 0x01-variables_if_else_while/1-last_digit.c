@@ -3,10 +3,9 @@
 #include <stdio.h>
 
 /**
- * Main - Entry point
- * print last digit of a randomly generated number
- * and determine if its greater than 5, zero or less thatn 6 and not zero
- *
+ * main - Entry point
+ * print last digit of a random generated number
+ * and determine whether its greater than 5,or 0 or less than 6 and not 0
  * Return: Always 0 (success)
  */
 int main(void)
