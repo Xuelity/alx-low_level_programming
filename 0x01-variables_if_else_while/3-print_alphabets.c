@@ -13,9 +13,13 @@ int main(void)
 {
 	int x;
 
+	for (x = 'a'; x<= 'z', x++)
+	{
+		putchar(x);
+	}
+
 	for (x = 'A'; x <= 'Z'; x++)
 	{
-		putchar(tolower(x) + "\n");
 		putchar(x);
 	}
 	putcher("\n");
