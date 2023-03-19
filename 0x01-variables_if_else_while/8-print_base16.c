@@ -12,8 +12,11 @@ int main(void)
 {
 	int x;
 
-	for (x = 0; x  <= 16; x++)
-		putchar("%x");
+	for (x = 0; x  < 10; x++)
+		putchar(48 + x);
+	for (x = 'a'; x <= 'g'; x++)
+		putchar(x);
+	putchar('\n');
 	/*return value 0*/
 	return (0);
 }
