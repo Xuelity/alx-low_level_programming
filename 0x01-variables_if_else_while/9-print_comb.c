@@ -13,13 +13,15 @@ int main(void)
 
 	for (x = 0; x < 10; x++)
 	{
-		putchar(48 + x);
-		putchar(',');
-		putchar(' ');
+		if (x == 9)
+			putchar(48 + x);
+		else
+		{
+			putchar(48 + x);
+			putchar(',');
+			putchar(' ');
+		}
 	}
-
-	putchar('\n');
-
 	/*return 0*/
 	return (0);
 }
