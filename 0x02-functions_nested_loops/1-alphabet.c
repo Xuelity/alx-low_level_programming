@@ -1,14 +1,16 @@
 #include "main.h"
 
 /**
- * main - entry point
+ * print_alphabet - main function
+ *
  * print alphabet function
  *
- * Return: Always 0
+ * Return: void
  */
 
 void print_alphabet(void)
 {
+	/*this function prints the alphabet in lower case*/
 	char x;
 
 	for (x = 'a'; x <= 'z'; x++)
