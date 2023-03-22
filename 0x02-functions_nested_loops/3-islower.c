@@ -2,9 +2,10 @@
 
 /**
  * _islower - main function
- * gets an integer value
- * checks the lower characters
+ * checks if a character is lower
  *
+ * @c: c is an ASCII character
+ * 
  * Return: 1 if lower else 0
  */
 
