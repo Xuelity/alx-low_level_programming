@@ -1,23 +1,20 @@
-#include "main.h"
+#include "holberton.h"
 
 /**
- * print_line - print a line
- * @c:c is an integer
+ * print_line - prints a line of _ n long
+ * @n: length of line
  *
+ * Return: void
  */
 
-void print_line(int c)
+void print_line(int n)
 {
-	int i;
+	int line = 0;
 
-	if (c > 0)
+	while (line < n)
 	{
-		while (c > 0)
-		{
-			_putchar('_');
-			c++;
-		}
+		_putchar('_');
+		line++;
 	}
-	else
-		_putchar('\n');
+	_putchar('\n');
 }
