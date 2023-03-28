@@ -23,6 +23,6 @@ void puts_half(char *str)
 		i = (count - 1) / 2;
 
 	for (i++; i < count; i++)
-		printf(str[i]);
-	printf("\n");
+		putchar(str[i]);
+	putchar("\n");
 }
