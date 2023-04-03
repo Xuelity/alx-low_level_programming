@@ -8,30 +8,24 @@
 
 char *cap_string(char *s)
 {
-	int x;
-	int prevW;
+	int count = 0, i;
+	int sep_words[] = {32, 9, 10, 44, 59, 46, 33, 63, 34, 40, 41, 123, 125};
 
-	for (x = 0; s[x] != '\0'; x++)
+	if (*(s + count) >= 97 && *(s + count) <= 122)
+		*(s + count) = *(s + count) - 32;
+	count++;
+	while (*(s + count) != '\0')
 	{
-		prevW = i - 1;
-		if (s[x] >= 'a' && s[x] <= 'z')
+		for (i = 0; i < 13; i++)
 		{
-			if (x == 0)
-				s[x] = s[x] - 32;
-			else if (s[prevW] >= 9 && s[prevW] <= 10)
-				s[x] = s[x] - 32;
-			else if (s[prevW] >= 32 && s[prevW] <= 34)
-				s[i] = s[i] - 32;
-			else if (s[prevW] >= 40 && s[prevW] <= 41)
-				s[i] = s[i] - 32;
-			else if (s[prevW] == 46)
-				s[i] = s[i] - 32;
-			else if (s[prevW] == 59)
-				s[i] = s[i] - 32;
-			else if (s[prevW] == 123 || s[prevW] == 125)
-				s[i] = s[i] - 32;
+			if (*(s + count) == sep_words[i])
+			{
+				if ((*(s + (count + 1)) >= 97) && (*(s + (count + 1)) <= 122))
+					*(s + (count + 1)) = *(s + (count + 1)) - 32;
+				break;
+			}
 		}
+		count++;
 	}
-
 	return (s);
 }
