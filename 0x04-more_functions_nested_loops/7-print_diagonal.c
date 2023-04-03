@@ -1,5 +1,5 @@
-#include "holberton.h"
-
+#include "main.h"
+#include <stdio.h>
 /**
  * print_diagonal - draws diagonal line
  * @n: number of times
@@ -18,15 +18,15 @@ void print_diagonal(int n)
 		{
 			for (spaces = 0; spaces < line; spaces++)
 			{
-				_putchar(' ');
+				putchar(' ');
 			}
-			_putchar('\\');
-			_putchar('\n');
+			putchar('\\');
+			putchar('\n');
 			line++;
 		}
 	}
 	else
 	{
-		_putchar('\n');
+		putchar('\n');
 	}
 }
