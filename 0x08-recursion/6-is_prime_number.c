@@ -8,7 +8,7 @@
  * Return: 1 if prime
  */
 
-int prime(unsigned int x, int y)
+int prime(int x, int y)
 {
 	if (x % y == 0)
 	{
